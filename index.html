@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du lịch Quy Nhơn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="navbar">
+		<div class="logo">
+			<h1>Quy Nhơn Tour</h1>
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="#">Trang chủ</a></li>
+				<li><a href="#">Tour Quy Nhơn</a></li>
+				<li><a href="#">Tour Phú Yên</a></li>
+				<li><a href="#">Cẩm nang du lịch</a></li>
+				<li><a href="#">Lịch khởi hành</a></li>
+			</ul>
+		</div>
+		<div class="signup">
+			<a href="#">Đăng nhập</a>
+		</div>
+	</div>
+	<div class="body">
+		<div class="heading">
+			<h1>Du lịch cùng với chúng tôi</h1>
+			<br>
+			<p>Hãy đến đây và tận hưởng cảm giác của một thiên đường</p>
+			<br>
+			<br>
+			<a href="#">Xem thêm</a>
+		</div>
+		<div class="tours">
+			<div class="places">
+				<h2>Phú Yên</h2>
+				<img src="img1.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+				<br>
+				<br>
+				<a href="#">Đặt ngay giảm 15%</a>
+			</div>
+			<div class="places">
+				<h2>Resort</h2>
+				<img src="img2.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+				<br>
+				<br>
+				<a href="#">Đặt ngay giảm 20%</a>
+			</div>
+			<div class="places">
+				<h2>Kỳ Co</h2>
+				<img src="img3.jpg" style="width: 300px; height: 250px; border-radius: 12px;">
+				<br>
+				<br>
+				<a href="#">Đặt ngay giảm 25%</a>
+			</div>
+		</div>
+	</div>
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Trò chuyện cùng Chatbot
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput">
+                                <input id="textInput" class="input-box" type="text" name="msg"
+                                    placeholder="Tap 'Enter' to send a message">
+                                <p></p>
+                            </div>
+
+                            <div class="chat-bar-icons">
+                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
+                                    onclick="heartButton()"></i>
+                                <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send"
+                                    onclick="sendButton()"></i>
+                            </div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="static/scripts/responses.js"></script>
+<script src="static/scripts/chat.js"></script>
+
+</html>
